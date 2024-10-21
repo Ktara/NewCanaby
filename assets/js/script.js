@@ -41,3 +41,57 @@ $('.quality_slider_wrapper').slick({
     adaptiveHeight: true,
     infinite: true
 });
+
+
+$('.category_question_list_header').click(function(){
+    $('.category_question_list_text_wrapper').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('category_question_list_header_open')){
+        $(this).removeClass('category_question_list_header_open');
+        return;
+    };
+    $('.category_question_list_header').removeClass('category_question_list_header_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 400);
+    $(this).addClass('category_question_list_header_open');
+});
+
+
+$('.categorypet_benefits_question_list_header').click(function(){
+    $('.categorypet_benefits_question_list_text_wrapper').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('categorypet_benefits_question_list_header_open')){
+        $(this).removeClass('categorypet_benefits_question_list_header_open');
+        return;
+    };
+    $('.categorypet_benefits_question_list_header').removeClass('categorypet_benefits_question_list_header_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 400);
+    $(this).addClass('categorypet_benefits_question_list_header_open');
+});
+
+
+$('.categorypet_faq_list_header').click(function(){
+    $('.categorypet_faq_list_text_wrapper').animate({
+        height: 0
+    }, 400);
+    var target = $(this).next();
+    if ($(this).hasClass('categorypet_faq_list_header_open')){
+        $(this).removeClass('categorypet_faq_list_header_open');
+        return;
+    };
+    $('.categorypet_faq_list_header').removeClass('categorypet_faq_list_header_open');
+    var childHeight = target.children().height();
+    target.animate({
+        height: childHeight
+    }, 400);
+    $(this).addClass('categorypet_faq_list_header_open');
+});

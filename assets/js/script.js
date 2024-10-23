@@ -95,3 +95,14 @@ $('.categorypet_faq_list_header').click(function(){
     }, 400);
     $(this).addClass('categorypet_faq_list_header_open');
 });
+
+
+$('.article_page_ps_slider_wrapper').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    zIndex: 100,
+    adaptiveHeight: true,
+    infinite: true
+});
